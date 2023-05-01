@@ -1,0 +1,15 @@
+div.container{
+    padding-top: 2%;
+}
+
+h3.title {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+
+    font-family: sans-serif;
+}
+
+div.row{
+    padding: 2%;
+}

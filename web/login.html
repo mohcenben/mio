@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="/web/images/ezDates.ico" rel="icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="/js/utils/include.js"> </script> <!-- Para hacer includes de código HTML en esta página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+</head>
+
+<body class="body-form">
+    <div id="page-header">
+        <script>include("header.html", "#page-header");</script>
+    </div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+    <div class="form-block">
+        <form>
+            <div class="user-data">
+                <p class="form-title">Iniciar Sesión</p>
+                <div class="input-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input required type="email" id="email" placeholder="p. ej. 'inmahernandez@us.es'">
+                </div>
+            
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input required type="password" id="password">
+                </div>
+                <p id="passwordreset">
+                    <a href="passwordreset.html">¿Has olvidado la contraseña?</a>
+                </p>
+
+            </div>
+
+        <button type="submit" id="form-button">Enviar</button>
+
+        </form>
+    </div>
+    <div>
+        <div id="page-footer"></div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+        <script>include("footer.html", "#page-footer");</script>
+      </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+h1.title {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+
+    font-family: sans-serif;
+
+}
+h4.title{
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+
+    font-family: sans-serif;
+    font-style: italic; 
+}
+
+div.col-md-4{
+    padding-left: 2%;
+    font-family: sans-serif;
+
+}
+
+div.card{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: inline-block; 
+}
+
+div.return{
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+p.aficion{
+    padding-left: 2%;
+}
+
+/*Para que no haga cosas raras al darle al boton de editar aficion*/
+.btn:focus {
+    outline: none;
+}
+
+img.photo-user-avatar {
+    max-width: 25px;
+    height: auto;
+    border-radius: 50%;
+}
+    

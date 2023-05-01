@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+
+
+  <title>Mis amigos</title>
+  <link rel="icon" href="/images/favicon.ico">
+  <script src="/js/utils/include.js"> </script> <!-- Para hacer includes de código HTML en esta página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="css/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/media-queries.css">
+  
+</head>
+<style type="text/css">
+  img.profile-photo-md {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  /*==================================================
+  Create Post Box CSS
+  ==================================================*/
+
+  .create-post {
+    width: 100%;
+    min-height: 90px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f1f2f2;
+  }
+
+  .create-post .form-group {
+    margin-bottom: 0;
+    display: inline-flex;
+  }
+
+  .create-post .form-group .form-control {
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  }
+
+  .create-post .form-group img.profile-photo-md {
+    margin-right: 10px;
+  }
+
+  .create-post .tools {
+    padding: 8px 0 10px;
+  }
+
+  .create-post .tools ul.publishing-tools {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  .create-post .tools ul.publishing-tools li a {
+    color: #6d6e71;
+    font-size: 18px;
+  }
+
+  .create-post .tools ul.publishing-tools li a:hover {
+    color: #27aae1;
+  }
+
+  .list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+
+  /*==================================================
+  Friend List CSS = Newsfeed and Timeline
+  ==================================================*/
+
+  .friend-list .friend-card {
+    border-radius: 4px;
+    border-bottom: 1px solid #f1f2f2;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .friend-list .friend-card .card-info {
+    padding: 0 20px 10px;
+  }
+
+  .friend-list .friend-card .card-info img.profile-photo-lg {
+    margin-top: -60px;
+    border: 7px solid #fff;
+  }
+
+  img.profile-photo-lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .text-green {
+    color: #8dc63f;
+  }
+</style>
+</head>
+</head>
+
+<body>
+
+  <div id="page-header"></div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+  <script>include("header.html", "#page-header");</script>
+  <div class="title-block text-center font-weight-light">
+    <h1 id="title">Mis amigos <i class="fa fa-users" aria-hidden="true"></i></h1>
+  </div>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+    <div class="create-post">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-7 col-sm-7">
+              <div class="form-group">
+                <img
+                  src="images/Jessica-Hawkins.jpg"
+                  alt="" class="img-thumbnail profile-photo-md" />
+                <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control"
+                  placeholder="Buscar un amigo"></textarea>
+                <div class="col-md-3 col-md-4">
+                  <button class="btn btn-primary btn-xs"> Buscar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-5">
+              <button href="friends.html" class="btn btn primary pull-right" style="background-color: #8dc63f;">Añadir
+                nuevos amigos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="friend-list">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="friend-card">
+          <img src="https://businessbeyondlimits.com/wp-content/uploads/2015/02/400x100.gif" alt="profile-cover"
+            class="img-responsive cover">
+          <div class="card-info">
+            <a href="editFriends.html"><img src="https://pbs.twimg.com/media/EgSS0VBWoAEaRLL?format=jpg&name=900x900"
+                alt="user" class="profile-photo-lg"></a>
+            <div class="friend-info">
+              <h5><a href="editFriends.html" class="profile-link">Jorge</a></h5>
+              <p>Sevilla</p>
+            </div>
+            <button id="button-delete" class="btn btn-danger">Eliminar amigo</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="friend-card">
+          <img src="https://businessbeyondlimits.com/wp-content/uploads/2015/02/400x100.gif" alt="profile-cover"
+            class="img-responsive cover"></a>
+          <div class="card-info">
+            <a href="editFriends2.html"><img
+                src="https://pbs.twimg.com/profile_images/823637312747749377/g_6ZLSuk_400x400.jpg" alt="user"
+                class="profile-photo-lg">
+              <div class="friend-info">
+                <h5><a href="editFriends2.html" class="profile-link">Suso</a></h5>
+                <p>Madrid</p>
+              </div>
+              <button id="button-delete" class="btn btn-danger">Eliminar amigo</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="friend-card">
+          <img src="https://businessbeyondlimits.com/wp-content/uploads/2015/02/400x100.gif" alt="profile-cover"
+            class="img-responsive cover">
+          <div class="card-info">
+            <a href="editFriends3.html"><img src="https://i.scdn.co/image/ab6765630000ba8a8c04c65ceb701d64f8966e23"
+                alt="user" class="profile-photo-lg"></a>
+            <div class="friend-info">
+              <h5><a href="editFriends3.html" class="profile-link">Carlos</a></h5>
+              <p>Huelva</p>
+            </div>
+            <button id="button-delete" class="btn btn-danger">Eliminar amigo</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="friend-card">
+          <img src="https://businessbeyondlimits.com/wp-content/uploads/2015/02/400x100.gif" alt="profile-cover"
+            class="img-responsive cover">
+          <div class="card-info">
+            <a href="editFriends4.html"><img
+                src="https://64.media.tumblr.com/385060b4900d47224120cdf30a4401d2/tumblr_o5cnc3gM8u1qg9zjlo1_1280.jpg"
+                alt="user" class="profile-photo-lg"></a>
+            <div class="friend-info">
+              <h5><a href="editFriends4.html" class="profile-link">Isamel</a></h5>
+              <p>Student at Harvard</p>
+            </div>
+            <button id="button-delete" class="btn btn-danger">Eliminar amigo</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="friend-card">
+          <img src="https://businessbeyondlimits.com/wp-content/uploads/2015/02/400x100.gif" alt="profile-cover"
+            class="img-responsive cover">
+          <div class="card-info">
+            <a href="editFriends5.html"> <img
+                src="https://i.pinimg.com/236x/64/6d/8b/646d8bf5a4b2dc031d9e7d04124aafdd.jpg" alt="user"
+                class="profile-photo-lg"></a>
+            <div class="friend-info">
+              <h5><a href="editFriends5.html" class="profile-link">Pablo</a></h5>
+              <p>Barcelona</p>
+            </div>
+            <button id="button-delete" class="btn btn-danger">Eliminar amigo</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="friend-card">
+          <img src="https://businessbeyondlimits.com/wp-content/uploads/2015/02/400x100.gif" alt="profile-cover"
+            class="img-responsive cover">
+          <div class="card-info">
+            <a href="editFriends6.html"><img src="https://media.tenor.com/fE0fmAUJ5fkAAAAi/troll-face.gif" alt="user"
+                class="profile-photo-lg"></a>
+            <div class="friend-info">
+              <h5><a href="editFriends6.html" class="profile-link">Manuel</a></h5>
+              <p>Paris</p>
+            </div>
+            <button id="button-delete" class="btn btn-danger">Eliminar amigo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="css/bootstrap.bundle.min.js"></script>
+  <script src="css/bootstrap.min.css"></script>
+  <script type="text/javascript">
+  </script>
+  	<div class="row">
+      <div id="page-footer"></div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+      <script>include("footer.html", "#page-footer");</script>
+    </div>
+</body>
+
+</html>

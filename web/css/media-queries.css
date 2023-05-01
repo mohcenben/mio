@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) { /* Móviles: Responsive */
+	div.registerForm-container form{
+        border: 1px solid silver;
+        padding:1%;
+        border-radius: 10px;
+        margin: 0;
+    }
+}

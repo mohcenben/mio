@@ -1,0 +1,71 @@
+<!DOCTYPE html >
+<html >
+<head >
+	<title>Editar foto</title> 
+    <link href="/images/ezDates.ico" rel="icon">
+	<script src= "/js/utils/include.js"> </script> <!-- Para hacer includes de código HTML en esta página -->
+	<meta name= "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel= "stylesheet" href= "/css/bootstrap.min.css">
+	<script src="css/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href= "/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+	<script src= "js/libs/axios.min.js"> </script> <!-- (1) Librería AXIOS para llamadas Ajax -->
+	<script src= "js/edit_photo.js" type="module"> </script> <!-- Archivo de control .js externo -->
+	
+</head>
+	<body>
+		<div id="page-header"></div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+		<script>include("header.html", "#page-header");</script>
+		<div class="container">
+			<h2 class="text-center font-weight-light">
+				<i class="fa fa-upload"></i> <span id="page-title">Publicar foto</span>
+			</h2>
+			<div class="row" id="errors"></div>
+			<div class="row">
+				<form id="form-photo-upload" class="col-md-6  ">
+					<div class="row">
+						<div class="form-floating mb-3 mt-3">
+							<input 	required type="text" class="form-control " id="input-url" name="pictureURL"
+									placeholder="Photo URL">
+							<label for="input-url">URL:</label>
+						</div>
+						<div class="form-floating  mb-3 mt-3">
+							<input required type="text" class="form-control" id="input-title" name="name"
+									placeholder="Title">
+							<label for="input-title">Titulo:</label>
+	
+						</div>
+						<div class="form-floating mb-3 mt-3">
+							
+							<textarea class="form-control" id="input-description" name="description"
+									placeholder="Describe your image..." rows="4"></textarea>
+							<label for="input-description">Descripción:</label>
+						</div>
+						
+						<div class="form-group col-md-9">
+													
+						</div>
+					
+						<div class="form-group">
+							<span class="">
+								<button class="btn btn-secondary" onclick="window.history.back()">
+									<i class="fa fa-undo mr-1"></i><small>Volver</small>
+								</button>
+							</span>
+		
+							<span class=" mr-2">
+								<button type="submit" class="btn btn-primary">
+									<i class="fa fa-send mr-1"></i><small>Enviar</small>
+								</button>
+							</span>
+						</div>	
+					</div>			
+				</form>
+				<div class="col-md-6">
+					<img id="img-edit" src="images/placeholder-img.jpg" alt="Placeholder Imagen" class="img-fluid">
+				</div>
+			</div>
+		<script>include ("footer.html", "body");</script><!-- Incrustar aquí pie común footer.html con JavaScript -->
+	</body>
+</html>

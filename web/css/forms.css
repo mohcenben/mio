@@ -1,0 +1,70 @@
+.form-block form{
+    border: 1px solid silver;
+    padding:1%;
+    border-radius: 10px;
+    margin: 0 30% 0 30%;
+    background: rgb(192,192,192, 0.85);
+}
+
+.form-block#psswdreset form{
+    border: 1px solid silver;
+    padding:1%;
+    border-radius: 10px;
+    margin: 0 30% 0 30%;
+    background: rgb(192,192,192, 0.85);
+}
+
+.form-title{
+    font-size: x-large;
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+
+#form-button{
+    display:block;
+    border:none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.input-group#grid1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.input-group#grid2{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.input-group label{
+    display: block;
+    font-size: medium;
+}
+
+.input-group input {
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.user-data p#passwordreset{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

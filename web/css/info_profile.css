@@ -1,0 +1,62 @@
+h1.title {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+
+    font-family: sans-serif;
+
+}
+
+h2.title {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+
+    font-family: sans-serif;
+    clear: both;
+}
+h3.title {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+h5.titulo{
+    padding-left: 4%;
+}
+
+p.infoPerfil{
+    padding-left: 4%;
+
+    font-family: sans-serif;
+
+}
+
+div.col-md-4{
+    padding-left: 2%;
+
+    font-family: sans-serif;
+
+}
+
+div.card bg-dark text-light, p.photo-gallery{
+    display: inline-block; 
+}
+
+button[type="submit"]{
+    margin-left: 4%;
+}
+
+div.return{
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+#formCambiarFoto{
+    padding-left:4%;
+    padding-bottom: 1%;
+
+}

@@ -1,0 +1,14 @@
+@import "forms.css";
+
+nav.navbar {
+    background-color: rgb(202, 202, 202);
+}
+
+nav.navbar a {
+    color: rgb(41, 41, 41) !important;
+}
+
+img.photo-image {
+    max-height: 120px;
+    width: auto;
+}

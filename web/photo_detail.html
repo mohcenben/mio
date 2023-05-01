@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Detalle de la foto</title>
+    <link href="/images/ezDates.ico" rel="icon">
+    <script src="/js/utils/include.js"> </script> <!-- Para hacer includes de código HTML en esta página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/photo_detail.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/photo_detail.js" type="module"></script>
+    
+</head>
+
+<body>
+    <div id="page-header">
+        <script>include("header.html", "#page-header");</script>
+    </div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+
+    <div id="errors"></div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-9" id="photo-details-column">
+                
+            </div>
+            <div class="col-md-3 mb-3">
+
+                <div class="row">
+                    <a href="user_profile.html">
+                        <button class="btn btn-secondary col mr-1" onclick="window.history.back()">
+                            <i class="fa fa-undo mr-2"></i>Volver
+                        </button>
+                    </a>
+
+                </div>
+                <div class="row">
+                    <button type="button" class="class btn btn-success" id="button-edit">
+                        <i class="fa fa-edit mr-2"></i>Editar
+                    </button>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-danger col" id="button-delete">
+                        <i class="fa fa-trash mr-2"></i>Borrar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-footer">
+        <script>include("footer.html", "#page-footer");</script>
+    </div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+</body>
+
+</html>

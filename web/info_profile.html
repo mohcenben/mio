@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Perfil de usuario</title>
+    <link href="/images/ezDates.ico" rel="icon">
+    <script src="/js/utils/include.js"> </script> <!-- Para hacer includes de código HTML en esta página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/info_profile.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+    <script src="/js/info_profile.js" type="module"></script>
+    <script src="/js/renderers/infoProfile.js" type="module"></script>
+
+    <script src="js/libs/axios.min.js"></script>
+    
+</head>
+
+<body>
+    <div id="page-header">
+        <script>include("header.html", "#page-header");</script>
+    </div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+
+    <div id="errors"></div>
+
+    <div class="inicio-container" id="inicio-container">
+
+    </div>
+
+        <!-- <form id="formCambiarFoto" enctype="multipart/form-data">
+            <input type="file" id="inputFoto" name="foto" accept="image/*">
+            <button id="btnCambiarFoto" type="submit" class="btn btn-primary">Cambiar foto</button>
+         </form> -->
+        
+        <div class="info-container" id="info-container">
+
+        </div>
+
+        <div class="return">
+            <a href="user_profile.html">Volver</a>
+        </div>
+
+
+        <div class="row text-center">
+            <div id="page-footer">
+                <script>include("footer.html", "#page-footer");</script>
+            </div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+
+        </div>
+</body>
+
+</html>

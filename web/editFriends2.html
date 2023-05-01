@@ -1,0 +1,64 @@
+<!DOCTYPE html >
+<html >
+<head >
+	<title>Example page</title> 
+	<meta charset="utf-8">
+	<link rel= "icon" href= "/images/favicon.ico">
+	<script src= "/js/utils/include.js"> </script> <!-- Para hacer includes de código HTML en esta página -->
+	<meta name= "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel= " stylesheet " href= "/css/bootstrap.min.css">
+	<link rel= " stylesheet " href= "/css/font-awesome.min.css">
+	<script src= "/js/libs/jquery-3.4.1.min.js"> </script>
+	<script src= "/js/libs/popper.min.js"> </script>
+	<script src= "/js/libs/bootstrap.min.js"> </script>
+	<link rel="stylesheet" href="/css/media-queries.css">
+
+
+    
+</head>
+	<body>
+		<div id="page-header"></div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+		<script>include ("header.html", "#page-header");</script>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md">
+					<h2 class=" font-weight-light"><i class="fa fa-camera-retro  "></i>Photo Detail</h2>
+				</div>	
+			</div>
+			<div class="row text-center">	
+				<div class= "col-md-9">
+					<img class="img-fluid" src= "https://pbs.twimg.com/profile_images/823637312747749377/g_6ZLSuk_400x400.jpg">
+					<h3>Suso</h3>
+                    <p class="text-muted">600km away</p>
+					<p>Periodista en Madrid </p>
+                    <p>Sueña como si fueras a vivir para siempre, vive como si fueras a morir hoy.</p>	
+				</div>
+				<div class="col-md-3 mb-3">
+					<div class="row ">
+						<button class="btn btn-secondary col mr-1" onclick="window.history.back()">
+							<a><i href="Friends.html" class="fa fa-undo mr-2"></i>Back
+                        </button></a>
+						<button class="btn btn-danger col" id="button-delete">
+							<i class="fa fa-trash mr-2"></i>Delete friend
+						</button>
+					</div>
+					<form class="row mt-2">
+							<select id="rating-input" name="rating" class="form-control col-md-8 text-success font-weight-bold">
+								<option value="0">(0)☆☆☆☆☆</option>
+								<option value="1">(1)★☆☆☆☆</option>
+								<option value="2">(2)★★☆☆☆</option>
+								<option value="3">(3)★★★☆☆</option>
+								<option value="4">(4)★★★★☆</option>
+								<option value="5">(5)★★★★★</option>
+							</select>
+							<button type= "submit" class= "btn btn-success col-md-4">
+									<i class="fa fa-send mr-2"></i>Rate
+							</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+		<div id="page-footer"></div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+		<script>include ("footer.html", "#page-footer");</script>
+	</body>
+</html >
