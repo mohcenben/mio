@@ -1,12 +1,12 @@
 'use strict';
 
 import { messageRenderer } from './renderers/messages.js';
-import { renderProfile } from './renderers/renderprofileFriends.js';
+import { profileRenderer } from './renderers/renderprofileFriends.js';
 
 const BASE_URL = '/api/v1';
 
 function displayFriendship(friendship) {
-  renderProfile(friendship.friend);
+  profileRenderer(friendship.friend);
   document.querySelector('#status').textContent = friendship.status;
 }
 
