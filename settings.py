@@ -11,7 +11,7 @@ DB_CONN = {
     "port": 3306,
     "username": "iissi_user",
     "password": "iissi$user",
-    "database": "ezDates",
+    "database": "gallery",
 }
 
 # The sequence of SQL scripts located in the sql/ folder that must
@@ -19,11 +19,11 @@ DB_CONN = {
 SQL_SCRIPTS = [
     "create_tables.sql",
     "create_views.sql",
-    "populate.sql"
+    "populate_database.sql",
 ]
 
 # The port in which the API and the web server will be deployed
-HTTP_PORT = 8080
+HTTP_PORT = 8081
 
 # The URL prefix for all API endpoints
 API_PREFIX = "/api/v1"
